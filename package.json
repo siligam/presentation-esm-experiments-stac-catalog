@@ -1,0 +1,18 @@
+{
+  "name": "presentation-esm-experiments-stac-catalog",
+  "version": "1.0.0",
+  "description": "ESM Experiments STAC Catalog presentation",
+  "scripts": {
+    "dev": "slidev slides.md",
+    "build": "slidev build slides.md --base /presentation-esm-experiments-stac-catalog/",
+    "export": "slidev export slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.3",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "^0.25.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.40.0"
+  }
+}
