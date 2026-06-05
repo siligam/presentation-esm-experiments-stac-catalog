@@ -14,6 +14,7 @@ title: ESM Experiments STAC Catalog
 author: Pavan Siligam
 date: 2026
 github: https://github.com/siligam/presentation-esm-experiments-stac-catalog
+routerMode: hash
 mdc: true
 download: true
 presenter: true
