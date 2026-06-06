@@ -4,7 +4,7 @@
   "description": "ESM Experiments STAC Catalog presentation",
   "scripts": {
     "dev": "slidev slides.md",
-    "build": "slidev build slides.md --base /presentation-esm-experiments-stac-catalog/ --router-mode hash",
+    "build": "slidev build slides.md --base ./ --router-mode hash",
     "export": "slidev export slides.md"
   },
   "dependencies": {
