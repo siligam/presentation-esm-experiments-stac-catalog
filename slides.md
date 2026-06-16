@@ -36,28 +36,38 @@ Turning sprawling Earth System Model output into a single, searchable, cloud-nat
 
 ---
 
-# Data Outlives the Run
+# Why a Catalog?
 
-Overtime, with many experimental runs...
+<p class="opacity-60 text-sm mb-6">A question that should take seconds.</p>
 
-<div class="grid grid-cols-3 gap-4 my-6">
-  <ItemCard title="file count">
-    <template #stat>10⁶+</template>
-    Files per experiment — variable × component × time, in NetCDF/GRIB
+<div class="border border-indigo-300/30 rounded-xl px-5 py-3 bg-indigo-500/5 text-sm italic mb-6">
+  "Which of our runs used CO₂ at 280 ppm with ocean coupling enabled?"
+</div>
+
+<p class="text-sm font-semibold mb-3">Without a catalog, answering this means:</p>
+
+<div class="grid grid-cols-4 gap-3 text-sm">
+  <ItemCard size="sm">
+    <template #stat>1 · Ask around</template>
+    Find whoever configured the run — if they're still on the team
   </ItemCard>
-  <ItemCard title="data volume">
-    <template #stat>PB</template>
-    Scale archives spread across tape, POSIX, and object storage
+  <ItemCard size="sm">
+    <template #stat>2 · Search directories</template>
+    Grep through output paths across HPC systems
   </ItemCard>
-  <ItemCard title="discovery">
-    <template #stat>?</template>
-    No record of what changed between runs — ask whoever remembers
+  <ItemCard size="sm">
+    <template #stat>3 · Read namelists</template>
+    Open config files one by one to check parameters manually
+  </ItemCard>
+  <ItemCard size="sm">
+    <template #stat>4 · Maybe an answer</template>
+    Minutes or days later — if someone remembers
   </ItemCard>
 </div>
 
-- Discovery is the bottleneck, not storage
-- The fix is metadata, not more disk
-- To address this, we need a catalog with rich, queryable metadata.
+<div class="mt-6 rounded-xl px-5 py-3 text-sm" style="border: 1px solid rgba(134,239,172,0.4); background: rgba(34,197,94,0.07);">
+  With a catalog, every run's configuration is recorded at run time — that question becomes a single query, answered in seconds.
+</div>
 
 ---
 
