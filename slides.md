@@ -73,10 +73,24 @@ Turning sprawling Earth System Model output into a single, searchable, cloud-nat
 
 # Our Catalog Requirements
 
-- **One entry point** — existing and planned experiments runs. A unified view.
-- **Multi-site** — ingest runs from any HPC center without manual merging
-- **Query & compare** — filter across experiments and understand their differences
-- **Metadata-first** — discovery is the goal; data access is optional
+<div class="grid grid-cols-2 gap-5 mt-6">
+  <ItemCard title="one entry point">
+    <template #stat>🗂️</template>
+    A unified view of all existing and planned experiment runs — past, present, and future.
+  </ItemCard>
+  <ItemCard title="multi-site">
+    <template #stat>🌐</template>
+    Ingest runs from any HPC centre — DKRZ, AWI, ECMWF — without manual merging.
+  </ItemCard>
+  <ItemCard title="query & compare">
+    <template #stat>🔍</template>
+    Filter across experiments by any parameter and diff configurations side by side.
+  </ItemCard>
+  <ItemCard title="metadata-first">
+    <template #stat>📋</template>
+    Discovery is the goal — data access is optional, not required.
+  </ItemCard>
+</div>
 
 ---
 
